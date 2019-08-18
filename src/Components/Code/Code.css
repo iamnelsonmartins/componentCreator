@@ -1,0 +1,37 @@
+#terminal {
+    background-color:#212121;
+    height: 300px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px;
+}
+
+#terminal div{
+    color:#FFF;
+}
+
+.copyBtn {
+width: 24px;
+height:24px;
+float:right;
+display: block;
+background-color:rgba(0,0,0,0);
+color:#FFF;
+border:none;
+/* background-image: url(../../Assets/file_copy.svg) */
+}
+
+.copyBtn:focus{
+    outline:0;
+}
+
+.copyBtn:hover{
+    color: #212121;
+    stroke:#FFF;
+}
+
+.fileCopied {
+    color:#c62828;
+    opacity: 0;
+    font-weight: bold;
+}

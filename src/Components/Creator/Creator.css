@@ -1,0 +1,77 @@
+#createComp {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+#createComp .item {
+    flex: 1;
+}
+/* text input */
+#createComp .item input[type=text] {
+    width:300px;
+    height:50px;
+    border:1px solid #445555;
+    padding: 0 10px 0 10px;
+}
+#createComp .item input[type=text]:focus {
+    outline:0;
+    border: 1px dashed #5b7171}
+
+/* radio input */
+
+.item input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.item label {
+    display: inline-block;
+    background-color: #445555;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.item label:hover {
+    background-color: #5b7171;
+}
+
+
+.item input[type="radio"]:checked + label {
+    background-color:#799797;
+}
+
+
+/* button input */
+
+#createComp .item button {
+    width:300px;
+    height:50px;
+    background-color: #445555;
+    border: 0 none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0 none;
+    text-decoration: none;
+    line-height: inherit;
+
+}
+
+#createComp .item button:hover {
+    background: #5b7171;
+}
+
+@media (max-width: 500px) {
+    #createComp {    
+        display: block;
+    }
+
+    #createComp .item{
+        margin-bottom: 20px;
+    }
+}
